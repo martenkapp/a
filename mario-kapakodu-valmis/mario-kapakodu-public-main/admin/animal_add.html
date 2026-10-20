@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mario Käpakodu – aitame loomadel leida armastava kodu.">
+  <title>Looma lisamine | Mario Käpakodu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<header class="border-bottom bg-white">
+  <nav class="navbar navbar-expand-lg container py-3" aria-label="Põhinavigatsioon">
+    <a class="navbar-brand" href="index.html"><img src="../assets/images/logo_big.svg" alt="Mario Käpakodu logo" width="150"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Ava menüü"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center"><li class="nav-item"><a class="nav-link " href="index.html">Ülevaade</a></li><li class="nav-item"><a class="nav-link " href="animals.html">Loomad</a></li><li class="nav-item"><a class="nav-link active" href="animal_add.html">Lisa loom</a></li></ul>
+    </div>
+  </nav>
+</header>
+<main class="flex-grow-1">
+<section class="container py-5"><p class="eyebrow mb-1">Haldusliides</p><h1 class="fw-bold mb-2">Looma lisamine ja muutmine</h1><p class="text-secondary mb-4">Täida looma andmed alloleval vormil.</p><div class="card border-0 shadow-sm"><div class="card-body p-4 p-md-5"><form action="#" method="post"><div class="row g-3"><div class="col-md-6"><label class="form-label" for="animalName">Looma nimi</label><input class="form-control" id="animalName" name="name" required></div><div class="col-md-6"><label class="form-label" for="species">Liik</label><select class="form-select" id="species" name="species" required><option value="" selected disabled>Vali liik</option><option>Koer</option><option>Kass</option><option>Muu</option></select></div><div class="col-md-6"><label class="form-label" for="age">Vanus</label><input class="form-control" id="age" name="age" type="number" min="0" max="50" required></div><div class="col-md-6"><label class="form-label" for="status">Staatus</label><select class="form-select" id="status" name="status" required><option>Kodu otsimas</option><option>Broneeritud</option><option>Leidnud kodu</option></select></div><div class="col-12"><label class="form-label" for="photo">Pildi failinimi</label><input class="form-control" id="photo" name="photo" placeholder="assets/images/loom.png"></div><div class="col-12"><label class="form-label" for="description">Kirjeldus</label><textarea class="form-control" id="description" name="description" rows="5" required></textarea></div><div class="col-12 d-flex gap-2"><button class="btn btn-success" type="submit">Salvesta</button><a class="btn btn-outline-secondary" href="animals.html">Tühista</a></div></div><p class="form-text mt-3 mb-0">See vorm on staatiline näidis. Andmete salvestamine lisatakse hiljem.</p></form></div></div></section>
+</main>
+<footer class="footer mt-5 py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+    <span>© 2026 Mario Käpakodu</span><span>Iga loom väärib armastavat kodu.</span>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body></html>

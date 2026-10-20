@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mario Käpakodu – aitame loomadel leida armastava kodu.">
+  <title>Loomade haldamine | Mario Käpakodu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<header class="border-bottom bg-white">
+  <nav class="navbar navbar-expand-lg container py-3" aria-label="Põhinavigatsioon">
+    <a class="navbar-brand" href="index.html"><img src="../assets/images/logo_big.svg" alt="Mario Käpakodu logo" width="150"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Ava menüü"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center"><li class="nav-item"><a class="nav-link " href="index.html">Ülevaade</a></li><li class="nav-item"><a class="nav-link active" href="animals.html">Loomad</a></li><li class="nav-item"><a class="nav-link " href="animal_add.html">Lisa loom</a></li></ul>
+    </div>
+  </nav>
+</header>
+<main class="flex-grow-1">
+<section class="container py-5"><div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4"><div><p class="eyebrow mb-1">Haldusliides</p><h1 class="fw-bold mb-1">Loomade haldamine</h1><p class="text-secondary mb-0">Vaata ja halda varjupaiga loomi.</p></div><a class="btn btn-success" href="animal_add.html">+ Lisa uus loom</a></div><div class="card border-0 shadow-sm"><div class="card-body"><div class="row g-3 mb-4"><div class="col-md-6"><label class="form-label" for="search">Otsi looma</label><input class="form-control" id="search" placeholder="Nimi või liik"></div><div class="col-md-3"><label class="form-label" for="status">Staatus</label><select class="form-select" id="status"><option>Kõik</option><option>Kodu otsimas</option><option>Broneeritud</option></select></div><div class="col-md-3 d-flex align-items-end"><button class="btn btn-outline-success w-100" type="button" onclick="filterAnimals()">Otsi</button></div></div><div class="table-responsive"><table class="table table-hover align-middle" id="animalTable"><thead><tr><th scope="col">Loom</th><th scope="col">Liik</th><th scope="col">Vanus</th><th scope="col">Staatus</th><th scope="col">Tegevused</th></tr></thead><tbody><tr><td>Musti</td><td>Koer</td><td>3 aastat</td><td><span class="badge text-bg-success">Kodu otsimas</span></td><td><a class="btn btn-sm btn-outline-secondary" href="animal_add.html">Muuda</a></td></tr><tr><td>Mimi</td><td>Kass</td><td>2 aastat</td><td><span class="badge text-bg-success">Kodu otsimas</span></td><td><a class="btn btn-sm btn-outline-secondary" href="animal_add.html">Muuda</a></td></tr><tr><td>Rex</td><td>Koer</td><td>5 aastat</td><td><span class="badge text-bg-warning">Broneeritud</span></td><td><a class="btn btn-sm btn-outline-secondary" href="animal_add.html">Muuda</a></td></tr><tr><td>Triibik</td><td>Kass</td><td>1 aasta</td><td><span class="badge text-bg-success">Kodu otsimas</span></td><td><a class="btn btn-sm btn-outline-secondary" href="animal_add.html">Muuda</a></td></tr></tbody></table></div><p class="form-text mb-0">Näidisandmed. Muudatusi ei salvestata serverisse.</p></div></div></section><script>function filterAnimals(){const q=document.getElementById('search').value.toLowerCase();document.querySelectorAll('#animalTable tbody tr').forEach(row=>row.hidden=!row.textContent.toLowerCase().includes(q));}</script>
+</main>
+<footer class="footer mt-5 py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+    <span>© 2026 Mario Käpakodu</span><span>Iga loom väärib armastavat kodu.</span>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body></html>

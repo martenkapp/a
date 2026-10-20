@@ -1,0 +1,11 @@
+/* Mario Käpakodu – ühine kujundus */
+:root{--green:#278653;--green-dark:#17633b;--mint:#eaf5ee;--ink:#26332b;--muted:#66736a}
+body{color:var(--ink);background:#fff;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+.navbar-brand img{max-height:54px;object-fit:contain}.nav-link{font-weight:600;color:#435047}.nav-link:hover,.nav-link.active{color:var(--green)!important}
+.btn-success{background:var(--green);border-color:var(--green)}.btn-success:hover{background:var(--green-dark);border-color:var(--green-dark)}
+.btn-outline-success{color:var(--green);border-color:var(--green)}.btn-outline-success:hover{background:var(--green);border-color:var(--green)}
+.hero{min-height:430px;background:linear-gradient(90deg,rgba(18,48,31,.72),rgba(18,48,31,.08)),url("../images/banner.png") center/cover no-repeat}
+.hero-panel{max-width:650px;background:rgba(255,255,255,.94)}.hero h1 span{color:var(--green)}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;font-weight:800;color:var(--green)}
+.animal-card{border:1px solid #e7eee9;border-radius:1rem;overflow:hidden;box-shadow:0 .25rem 1rem rgba(23,65,40,.06);transition:transform .2s,box-shadow .2s}.animal-card:hover{transform:translateY(-3px);box-shadow:0 .6rem 1.5rem rgba(23,65,40,.12)}
+.animal-img{height:220px;object-fit:cover;background:var(--mint)}.detail-img{width:100%;max-height:560px;object-fit:cover}.cta{background:var(--mint)}.fact{background:#f6f9f6;border-radius:.75rem;padding:1rem;display:flex;flex-direction:column;gap:.2rem}.fact span{font-size:.85rem;color:var(--muted)}.contact-info{padding:1.5rem;background:var(--mint);border-radius:1rem}.stat-card{border:0;box-shadow:0 .25rem 1rem rgba(23,65,40,.07);border-radius:1rem}.footer{background:#20372a;color:#e9f2eb}.footer span{font-size:.9rem}.form-control:focus,.form-select:focus{border-color:#7ebc95;box-shadow:0 0 0 .25rem rgba(39,134,83,.15)}
+@media(max-width:767.98px){.hero{min-height:380px}.hero-panel{margin:1rem 0}.animal-img{height:250px}}
